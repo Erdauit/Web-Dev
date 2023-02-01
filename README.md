@@ -7,7 +7,7 @@
 </div>
 
 
-
+> "Statistics is the grammar of science." Karl Pearson
 
 
 ![Header](https://github.com/Erdauit/erdauit/blob/main/assets/1a3f99383bf159bf76bbb6bfef7333e8.jpg)
