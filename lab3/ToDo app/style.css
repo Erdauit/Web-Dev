@@ -1,0 +1,135 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+.loginPage {
+    width: 100%;
+    background-color: rgb(241, 216, 76);
+    height: 50px;
+}
+
+.MainPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+}
+
+.logic {
+    width: 342px;
+}
+
+.ToDo {
+    margin: 80px;
+}
+
+.addTask {
+    width: 100px;
+    cursor: pointer;
+    padding: 12px;
+    background-color: rgb(243, 217, 101);
+    border: 1px solid rgb(237, 230, 158);
+    border-radius: 4px;
+}
+
+.addTask:hover {
+    background-color: rgb(252, 223, 33);
+}
+
+.inputText {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    border-color: aliceblue;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}  
+
+.add {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ToDo span {
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    background-color: rgb(255, 254, 240);
+    border: 1px solid rgb(237, 230, 158);
+    padding: 10px;
+    width: 300px;
+    border-radius: 3px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.assignments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+    border-radius: 3px;
+}
+
+.todo-items {
+    padding: 0%;
+}
+
+.line {
+    margin-top: 10px;
+    border-top: 2px solid rgb(237, 230, 158);
+}
+
+.checkbox {
+    margin-right: 10px;
+    width: 2em;
+    height: 2em;
+    background-color: white;
+
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox:checked {
+    background-color: rgb(33, 33, 33);
+
+}
+
+ul li.checked {
+    color: rgb(8, 7, 7);
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete-button {
+    text-decoration: none;
+    cursor: pointer;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+#trash {
+    pointer-events: none;
+}
