@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let room = {
+            number: 23
+        };
+
+        let meetup = {
+            title: "Conference",
+            occupiedBy: [{name: "John"}, {name: "Alice"}],
+            place: room
+        };
+
+        room.occupiedBy = meetup;
+        meetup.self = meetup;
+
+        alert( JSON.stringify(meetup, function replacer(key, value) {
+            return (key != "" && value == meetup) ? undefined : value;
+        }));
+
+        /*
+        {
+        "title":"Conference",
+        "occupiedBy":[{"name":"John"},{"name":"Alice"}],
+        "place":{"number":23}
+        }
+        */
+    </script>
+</body>
+</html>

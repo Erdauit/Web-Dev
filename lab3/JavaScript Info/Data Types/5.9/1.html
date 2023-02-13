@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sumSalaries(salaries) {
+
+            let sum = 0;
+            for (let sal of Object.values(salaries)) {
+                sum += sal;
+            }
+
+            return sum; // 650
+        }
+
+        let salaries = {
+            "John": 100,
+            "Pete": 300,
+            "Mary": 250
+        };
+
+        alert( sumSalaries(salaries) ); // 650
+    </script>
+</body>
+</html>

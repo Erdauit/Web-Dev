@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getLastDayOfMonth(year, month) {
+            let date = new Date(year, month + 1, 0);
+            return date.getDate();
+        }
+
+        alert( getLastDayOfMonth(2012, 0) ); // 31
+        alert( getLastDayOfMonth(2012, 1) ); // 29
+        alert( getLastDayOfMonth(2013, 1) ); // 28
+    </script>
+</body>
+</html>
