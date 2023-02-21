@@ -18,6 +18,9 @@
       <p *ngIf="product.rating">
         Rating: {{ product.rating }} ★
       </p>
+      <p *ngIf="product.price">
+        Cost: {{ product.price | currency  }} 
+      </p>
 
       <button type="button" (click)="share(product.url)">
         Share
