@@ -7,7 +7,26 @@
         </a>
       </h3>
       <div class="img">
-        <img [src]="product.img" class="images">
+        <div class="carousel">
+  
+          <input type="checkbox" class="faux-ui-facia"> 
+          <div class="slide" slide="1" annot="this is my carousel">
+            <img [src] = "product.img3" alt="Slide 3">
+          </div>
+        
+          <input type="checkbox" class="faux-ui-facia">
+          <div class="slide" slide="2" annot="reaally cool">
+            <img [src] = "product.img2" alt="Slide 2">
+          </div>
+        
+          <input type="checkbox" class="faux-ui-facia">
+        
+          <div class="slide" slide="3" annot="Photos from kaspi.kz. All things from kaspi. Kaspi everywhere!!!">
+            <img [src] = "product.img" alt="Slide 1">
+          </div>
+           
+         
+        </div>
       </div>
       
       <div class="line"></div>
