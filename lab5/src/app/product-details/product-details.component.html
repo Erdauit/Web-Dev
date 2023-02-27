@@ -1,0 +1,40 @@
+<h1 style="text-align: center; width: 100%;">Product Details</h1>
+
+
+<div *ngIf="product" class = "details">
+
+
+  <div class="carousel">
+  
+    <input type="checkbox" class="faux-ui-facia"> 
+    <div class="slide" slide="3" annot="this is my carousel">
+      <img [src] = "product.img" alt="Slide 3">
+    </div>
+  
+    <input type="checkbox" class="faux-ui-facia">
+    <div class="slide" slide="2" annot="reaally cool">
+      <img [src] = "product.img2" alt="Slide 2">
+    </div>
+  
+    <input type="checkbox" class="faux-ui-facia">
+  
+    <div class="slide" slide="1" annot="Photos from kaspi.kz. All things from kaspi. Kaspi everywhere!!!">
+      <img [src] = "product.img3" alt="Slide 1">
+    </div>
+     
+    <div class="counter" count="5"> / 3</div>
+   
+  </div>
+  
+  <div class = "description">  
+    <h2 style = "font-size: 35px;">{{ product.name }}</h2>
+    <h2>Rating: {{ product.rating }} ★ </h2>
+    <div class="line"></div>
+    <h4>Price : {{ product.price | currency }}</h4>
+    <h4>Likes : {{ product.likes }}</h4>
+    <div class="line"></div>
+    <p>Description: {{ product.description }}</p>
+    <button type="button" (click)="addToCart(product)">Buy</button>    
+  </div>
+
+</div>
