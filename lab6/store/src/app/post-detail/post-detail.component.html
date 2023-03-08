@@ -1,0 +1,22 @@
+
+<button type="button" (click)="back()">back</button>
+
+<div *ngIf="loaded" class="screen">
+    <h1>Post detail #{{post.id}}</h1>
+    <h2>{{post.title}}</h2>
+
+    <a routerLink="/albums/{{post.id}}/photos">
+        Check out the photos
+    </a>
+    <div class = "buttons-save">
+        <h2>
+            <input [(ngModel)]="newTitle" type="text"/>
+        </h2>
+        <div class="detail-info-buttons">
+            <button class="buttons-save" (click)="saveTitle()">Save</button>
+        </div>    
+    </div>
+
+</div>
+  
+  <h3 *ngIf="!loaded">Post is loading...</h3>

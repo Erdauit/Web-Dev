@@ -1,0 +1,10 @@
+.buttons-save {
+    background-color: rgb(250, 245, 238);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.screen {
+    margin: 10px;
+}

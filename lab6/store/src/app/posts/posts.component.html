@@ -1,0 +1,17 @@
+<h2>Posts list</h2>
+
+<fieldset>
+  <input type="text" [(ngModel)]="newPost.title"><br/>
+  <button (click)="addPost()">Add post</button>
+</fieldset>
+
+<ul *ngIf="loaded">
+  <li *ngFor="let post of posts">
+    <a routerLink="/albums/{{post.id}}">
+      {{post.id}}) {{post.title}}
+    </a>
+    <button (click)="deleteAlbum(post.id)">Delete</button>
+  </li>
+</ul>
+
+<h3 *ngIf="!loaded">Posts are loading...</h3>
