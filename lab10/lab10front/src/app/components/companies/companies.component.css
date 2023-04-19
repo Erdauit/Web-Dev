@@ -1,0 +1,92 @@
+/* Global styles */
+:root {
+  --main-color: #3b82f6;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Header styles */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main h1 {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--main-color);
+}
+
+/* Company styles */
+.main-companies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border: 1px solid;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.main-companies-name {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+.main-companies p {
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+  text-align: center;
+  line-height: 1.25;
+}
+
+.main-companies p:first-of-type {
+  margin-top: 0.75rem;
+}
+
+.main-companies p:last-of-type {
+  margin-bottom: 0;
+}
+
+.change-btn{
+  background-color: #f5e20b;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.delete-btn{
+  background-color: #f64c68;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.main-btns{
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 3rem;
+}

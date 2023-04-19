@@ -1,0 +1,61 @@
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Write the changes</h5>
+  <button
+    (click)="modalRef.close()"
+    aria-label="Close"
+    class="btn-close"
+    type="button"
+  ></button>
+</div>
+<form (ngSubmit)="updateCompany()" class=" py-4 px-6 border rounded flex items-center flex-col mb-2 ">
+  <div class="modal-body">
+
+    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-black" for="Title">
+      <span>Title </span>
+      <input [(ngModel)]="newName"
+             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+             id="title" name="Title" placeholder="Samsung"
+             type="text"
+      />
+    </label>
+
+    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-black" for="Description">
+      <span>Description </span>
+      <input [(ngModel)]="newDescription"
+             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+             id="description" name="Description"
+             placeholder="very something"
+             type="text"/>
+    </label>
+
+    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-black" for="City">
+      <span>City </span>
+      <input [(ngModel)]="newCity"
+             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+             id="city" name="Description"
+             placeholder="Aktobe"
+             type="text"/>
+    </label>
+
+    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-black" for="Address">
+      <span>Address </span>
+      <input [(ngModel)]="newAddress"
+             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+             id="address" name="Description"
+             placeholder="Bogenbai Batyr"
+             type="text"/>
+    </label>
+
+  </div>
+  <div class="modal-footer">
+    <input
+      (click)="modalRef.close()"
+      class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+      type="submit" value='Close'
+    />
+    <input
+      class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+      type="submit" value='SUBMIT'
+    />
+  </div>
+</form>

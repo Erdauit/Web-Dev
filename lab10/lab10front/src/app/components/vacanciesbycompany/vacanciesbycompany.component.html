@@ -1,0 +1,11 @@
+<h1 class="main"> Vacancies </h1>
+<div *ngFor="let vacancy of Vacancies" class="main-companies">
+
+  <h3 class="main-companies-name"><b>Name:{{vacancy.name}}</b></h3>
+  <p>Salary:{{vacancy.salary}}</p>
+  <div class="main-btns">
+    <button (click)="sendData(vacancy.id)" [routerLink]="['/updatevacancy']" class="change-btn"> Change</button>
+    <p>Description:{{vacancy.description}}</p>
+    <button (click)="deleteVacancy(vacancy.id)" class="delete-btn"> Delete</button>
+  </div>
+</div>

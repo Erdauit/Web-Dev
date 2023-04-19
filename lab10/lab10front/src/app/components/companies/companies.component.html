@@ -1,0 +1,17 @@
+<h1 class="main"> Companies</h1>
+<div *ngFor="let company of Companies"
+     class="main-companies">
+
+  <h3 (click)="sendData(company.id)" [routerLink]="['/vacanciesbycompany']" class="main-companies-name">
+    <b>Name:{{company.name}}</b></h3>
+
+  <p> City:{{company.city}}</p>
+  <p>Address:{{company.address}}</p>
+  <div class="main-btns">
+    <button (click)="sendData(company.id)" [routerLink]="['/updatecompany']" class="change-btn"> Change</button>
+    <p>Description:{{company.description}}</p>
+    <button (click)="deleteCompany(company.id)" class="delete-btn"> Delete</button>
+  </div>
+</div>
+
+

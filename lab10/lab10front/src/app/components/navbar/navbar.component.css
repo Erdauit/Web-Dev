@@ -1,0 +1,8 @@
+.main-navbar{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.75rem;
+  margin-bottom: 0.5rem;
+
+}

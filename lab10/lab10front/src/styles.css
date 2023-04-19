@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+router-outlet + * {
+  padding: 0 16px;
+}
+
+/* Text */
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h1, h2 {
+  font-weight: lighter;
+}
+
+
+app-header {
+  width: 100%;
+  height: 68px;
+  background-color: #1976d2;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+app-header h1 {
+  color: white;
+  margin: 0;
+}
+
+app-header h2, h3, h4, h5, h6 {
+  color: black;
+  margin: 0;
+}
+
+app-header h2, h3, h4, h5, h6:hover {
+  font-weight: 700;
+  margin: 0;
+}

@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+
+.item {
+  margin: 10px; /* Add some spacing between items */
+  padding: 10px; /* Add some padding to make items stand out */
+  background-color: #ccc; /* Add a background color to make items visible */
+}

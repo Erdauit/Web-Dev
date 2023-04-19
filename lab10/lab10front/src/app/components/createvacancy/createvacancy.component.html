@@ -1,0 +1,39 @@
+<form (ngSubmit)="onSubmit()" #vacancyForm="ngForm">
+  <label>
+    Vacancy Name:
+    <input type="text" name="name" [(ngModel)]="newVacancy.name" required>
+  </label>
+  <br>
+  <label>
+    Description:
+    <textarea name="description" [(ngModel)]="newVacancy.description" required></textarea>
+  </label>
+  <br>
+  <label>
+    Salary:
+    <input type="number" name="salary" [(ngModel)]="newVacancy.salary" required>
+  </label>
+  <br>
+  <br>
+  <label>
+    Company Name:
+    <input type="text" name="companyName" [(ngModel)]="newVacancy.company.name" required>
+  </label>
+  <br>
+  <label>
+    Company Description:
+    <textarea name="companyDescription" [(ngModel)]="newVacancy.company.description"></textarea>
+  </label>
+  <br>
+  <label>
+    Company City:
+    <input type="text" name="companyCity" [(ngModel)]="newVacancy.company.city" required>
+  </label>
+  <br>
+  <label>
+    Company Address:
+    <textarea name="companyAddress" [(ngModel)]="newVacancy.company.address"></textarea>
+  </label>
+  <br>
+  <button type="submit" [disabled]="vacancyForm.invalid">Create Vacancy</button>
+</form>
